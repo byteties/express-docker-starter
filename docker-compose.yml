@@ -12,3 +12,9 @@ services:
     ports:
       - '8001:8001'
     command: ['/bin/sh', '-c', 'yarn && yarn dev']
+
+
+networks:
+    default:
+        external:
+            name: microservicenetwork
